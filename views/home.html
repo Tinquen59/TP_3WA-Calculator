@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="/bootstrap" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="http://127.0.0.1:3000/memory">> memory</a>
+        <form action="/" method="POST">
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" name="number1" placeholder="Number 1">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" name="number2" placeholder="Number 2">
+                </div>
+            </div>
+
+            <div class="btn-group d-flex justify-content-center mt-3" role="group" aria-label="Basic example">
+                <button
+                    type="submit"
+                    name="action"
+                    value="add"
+                    class="btn btn-outline-primary"
+                >
+                    Add
+                </button>
+                <button
+                    type="submit"
+                    name="action"
+                    value="sous"
+                    class="btn btn-outline-secondary"
+                >
+                    Sous
+                </button>
+                <button
+                    type="submit"
+                    name="action"
+                    value="mult"
+                    class="btn btn-outline-success"
+                >
+                    Mult
+                </button>
+                <button
+                    type="submit"
+                    name="action"
+                    value="div"
+                    class="btn btn-outline-warning"
+                >
+                    Div
+                </button>
+                <button
+                    type="submit"
+                    name="action"
+                    value="reset"
+                    class="btn btn-outline-danger"
+                >
+                    Reset
+                </button>
+            </div>
+        </form>
+
+        <p class="text-center mt-5"><%= resultCalcualtor %></p>
+    </div>
+</body>
+</html>
